@@ -1,0 +1,68 @@
+@prefix aop:   <http://annotaria.web.cs.unibo.it/document/person/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix frbr:  <http://purl.org/vocab/frbr/core#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix au:    <http://description.org/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ao:    <http://annotaria.web.cs.unibo.it/documents> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+
+[ a               oa:Annotation ;
+  rdfs:label      "denotesPerson: asdf" ;
+  <http://annotaria.web.cs.unibo.it/documents/type>
+          "denotesPerson" ;
+  oa:annotatedAt  "2014-07-03T12:07" ;
+  oa:annotatedBy  [ a             foaf:Person ;
+                    rdf:object    <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
+                    schema:email  "patonz91@agmail.com" ;
+                    foaf:name     "Leonardo" ;
+                    foaf:surname  "Montecchiari"
+                  ] ;
+  oa:hasBody      [ a              rdf:Statement ;
+                    rdf:object     <http://monsjovis.com> ;
+                    rdf:predicate  sem:denotes ;
+                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2005_Aug_25_5_25_ver1.html#q91523615180a1c-3-38> ;
+                    rdfs:label     "asdf"
+                  ] ;
+  oa:hasTarget    [ a               oa:SpecificResource ;
+                    oa:hasSelector  [ a          oa:FragmentSelector ;
+                                      rdf:value  "q91523615180a1c" ;
+                                      oa:end     "38"^^xsd:nonNegativeInteger ;
+                                      oa:start   "3"^^xsd:nonNegativeIntegeroa
+                                    ] ;
+                    oa:hasSource    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2005_Aug_25_5_25_ver1.html>
+                  ]
+] .
+
+[ a               oa:Annotation ;
+  rdfs:label      "denotesPerson: Mario Rossi" ;
+  <http://annotaria.web.cs.unibo.it/documents/type>
+          "denotesPerson" ;
+  oa:annotatedAt  "2014-07-03T13:07" ;
+  oa:annotatedBy  [ a             foaf:Person ;
+                    rdf:object    <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
+                    schema:email  "patonz91@agmail.com" ;
+                    foaf:name     "Leonardo" ;
+                    foaf:surname  "Montecchiari"
+                  ] ;
+  oa:hasBody      [ a              rdf:Statement ;
+                    rdf:object     "" ;
+                    rdf:predicate  sem:denotes ;
+                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html#q133m1102-10-19> ;
+                    rdfs:label     "Mario Rossi"
+                  ] ;
+  oa:hasTarget    [ a               oa:SpecificResource ;
+                    oa:hasSelector  [ a          oa:FragmentSelector ;
+                                      rdf:value  "q133m1102" ;
+                                      oa:end     "19"^^xsd:nonNegativeInteger ;
+                                      oa:start   "10"^^xsd:nonNegativeIntegeroa
+                                    ] ;
+                    oa:hasSource    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html>
+                  ]
+] .
