@@ -1,0 +1,35 @@
+@prefix aop:   <http://annotaria.web.cs.unibo.it/documents/person> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix frbr:  <http://purl.org/vocab/frbr/core#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix au:    <http://description.org/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ao:    <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+
+[ a               oa:Annotation ;
+  rdfs:label      "Luogo" ;
+  ao:type         "denotesPlace" ;
+  oa:annotatedAt  "2014-07-05T12:07" ;
+  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
+  oa:hasBody      [ a              rdf:Statement ;
+                    rdf:object     <http://it.wikipedia.org/wiki/London> ;
+                    rdf:predicate  sem:denotes ;
+                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html#y537l1550-109-116> ;
+                    rdfs:label     "London"
+                  ] ;
+  oa:hasTarget    [ a               oa:SpecificResource ;
+                    oa:hasSelector  [ a          oa:FragmentSelector ;
+                                      rdf:value  "y537l1550" ;
+                                      oa:end     "116"^^xsd:nonNegativeInteger ;
+                                      oa:start   "109"^^xsd:nonNegativeIntegeroa
+                                    ] ;
+                    oa:hasSource    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html
+                  ]
+] .
