@@ -1,0 +1,28 @@
+PREFIX schema: <http://schema.org/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX aop: <http://annotaria.web.cs.unibo.it/documents/person/>
+
+
+
+aop:leonardo-montecchiari
+		a 							foaf:Person ;
+		schema:email			 	"leonardo.montecchiari@gmail.com"
+		foaf:name 					"Leonardo Montecchiari" .
+
+
+<http://patonz.com> 
+		a 							foaf:Person ;
+		foaf:name					"Leonardo Montecchiari" .
+
+
+
+
+
+
+<mailto:riccardo.biavati@gmail.com>
+        a                          foaf:Person ;
+        schema:email			  "riccardo.biavati@gmail.com" ;
+        foaf:name                  "Riccardo Biavati" .
+
+
+
