@@ -1,0 +1,19 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oa:       <http://www.w3.org/ns/oa#> .
+@prefix ao:       <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix aop:      <http://annotaria.web.cs.unibo.it/documents/person/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+
+[ a               oa:Annotation ;
+  rdfs:label      "Autore" ;
+  ao:type         "hasAuthor" ;
+  oa:annotatedAt  "2014-07-05T12:07" ;
+  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/nome-cognome> ;
+  oa:hasBody      [ a              rdf:Statement ;
+                    rdf:object     aop:nome-cognome ;
+                    rdf:predicate  dcterms:creator ;
+                    rdf:subject    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html ;
+                    rdfs:label     "Questo articolo ha come autore Nome Cognome"
+                  ] ;
+  oa:hasTarget    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html
+] .
