@@ -4,7 +4,7 @@
   oa:annotatedAt  "2014-07-05T12:07" ;
   oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     "In tutto il mondo, sempre più gruppi di ricerca stanno seguendo la ricerca scientifica e naturopatica che è al centro del lavoro di formazione dell’Alleanza dr Rath per la Salute. Il numero di pubblicazioni scientifiche sull’importanza dei micronutrienti nella lotta contro le malattie comuni più diffuse è in rapida crescita." ;
+                    rdf:object     "In tutto il mondo, sempre più gruppi di ricerca stanno seguendo la ricerca scientifica e naturopatica che è al centro del lavoro di formazione dell’Alleanza dr Rath per la Salute. Il numero di pubblicazioni scientifiche sull’importanza dei micronutrienti nella lotta contro le malattie comuni più diffuse è in rapida crescita."^^xsd:string ;
                     rdf:predicate  schema:comment ;
                     rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html#d1e473-0-643> ;
                     rdfs:label     "In tutto i..."
@@ -25,7 +25,7 @@
   oa:annotatedAt  "2014-07-05T12:07" ;
   oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     "Ottima tabella" ;
+                    rdf:object     "Ottima tabella"^^xsd:string ;
                     rdf:predicate  schema:comment ;
                     rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html#d1e471-0-59> ;
                     rdfs:label     "Ottima tab..."
