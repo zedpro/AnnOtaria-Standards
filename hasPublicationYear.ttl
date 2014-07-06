@@ -4,7 +4,7 @@
   oa:annotatedAt  "2014-07-05T12:07" ;
   oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     "2014" ;
+                    rdf:object     "2014"^^xsd:gYear ;
                     rdf:predicate  fabio:hasPublicationYear ;
                     rdf:subject    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html ;
                     rdfs:label     "07/05/2014"
