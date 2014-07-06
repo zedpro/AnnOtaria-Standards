@@ -4,7 +4,7 @@
   oa:annotatedAt  "2014-07-05T12:07" ;
   oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     "BMC Cardiovasc Disord 2002 Mar 27/2/7 Versione 1" ;
+                    rdf:object     "BMC Cardiovasc Disord 2002 Mar 27/2/7 Versione 1"^^xsd:string ;
                     rdf:predicate  dcterms:title ;
                     rdf:subject    ao:BMC_Cardiovasc_Disord_2002_Mar_27_2_7_ver1.html ;
                     rdfs:label     "BMC Cardio..."
