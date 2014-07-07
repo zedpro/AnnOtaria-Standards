@@ -8,12 +8,19 @@
   rdfs:label      "Autore" ;
   ao:type         "hasAuthor" ;
   oa:annotatedAt  "2014-07-05T12:07" ;
-  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/nome-cognome> ;
+  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/mario-rossi> ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     aop:nome-cognome ;
+                    rdf:object     aop:pinco-pallo ;
                     rdf:predicate  dcterms:creator ;
                     rdf:subject    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html ;
-                    rdfs:label     "Questo articolo ha come autore Nome Cognome"
+                    rdfs:label     "Pinco Pallo"
                   ] ;
   oa:hasTarget    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html
 ] .
+
+
+
+
+###
+
+NB: nella label interna, strutturalmente, ci sarà soltanto l'informazione chiave.  Giusto per lasciare libertà alle diverse applicazioni di utilizzare la label come meglio crede, ad esempio emplementare unìapplicazione multilingua o cmq utilizzare una frase diversa con all'interno quella label "Pinco Pallo"
