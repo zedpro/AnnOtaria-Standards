@@ -1,30 +1,28 @@
-[ a       <http://www.w3.org/ns/oa#Annotation> ;
-  <http://www.w3.org/2000/01/rdf-schema#label>
-          "Chiarezza" ;
-  <http://annotaria.web.cs.unibo.it/documents/type>
-          "hasClarityScore" ;
-  <http://www.w3.org/ns/oa#annotatedAt>
-          "2014-07-07T13:07" ;
-  <http://www.w3.org/ns/oa#annotatedBy>
-          <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
-  <http://www.w3.org/ns/oa#hasBody>
-          [ a              rdf:Statement ;
-            rdf:object     "good" ;
-            rdf:predicate  <http://annotaria.web.cs.unibo.it/documents/hasClarityScore> ;
-            rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html#k825j2078-0-10> ;
-            <http://www.w3.org/2000/01/rdf-schema#label>
-                    "good"
-          ] ;
-  <http://www.w3.org/ns/oa#hasTarget>
-          [ a       <http://www.w3.org/ns/oa#SpecificResource> ;
-            <http://www.w3.org/ns/oa#hasSelector>
-                    [ a                              <http://www.w3.org/ns/oa#FragmentSelector> ;
-                      rdf:value                      "k825j2078" ;
-                      <http://www.w3.org/ns/oa#end>  "10"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
-                      <http://www.w3.org/ns/oa#start>
-                              "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeIntegeroa>
-                    ] ;
-            <http://www.w3.org/ns/oa#hasSource>
-                    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html>
-          ]
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix oa:       <http://www.w3.org/ns/oa#> .
+@prefix ao:       <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+[ a               oa:Annotation ;
+  rdfs:label      "Chiarezza" ;
+  ao:tpe          "hasClarityScore" ;
+  oa:annotatedAt  "2014-07-07T13:07" ;
+  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
+  oa:hasBody      [ a              rdf:Statement ;
+                    rdf:object     "good" ;
+                    rdf:predicate  <http://annotaria.web.cs.unibo.it/documents/hasClarityScore> ;
+                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html#k825j2078-0-10> ;
+                    rdfs:label     "good"
+                  ] ;
+  oa:hasTarget    [ a       oa:SpecificResource ;
+                    oa:hasSelector  [ a           oa:FragmentSelector ;
+                                      rdf:value   "k825j2078" ;
+                                      oa:end      "10"^^xsd:nonNegativeInteger ;
+                                      oa:start    "0"^^xsd:nonNegativeInteger
+                                    ] ;
+                    oa:hasSource  <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html>
+                  ]
 ] .
