@@ -1,6 +1,6 @@
 [ a       <http://www.w3.org/ns/oa#Annotation> ;
   <http://www.w3.org/2000/01/rdf-schema#label>
-          "ClarityScore: good" ;
+          "Chiarezza" ;
   <http://annotaria.web.cs.unibo.it/documents/type>
           "hasClarityScore" ;
   <http://www.w3.org/ns/oa#annotatedAt>
@@ -13,7 +13,7 @@
             rdf:predicate  <http://annotaria.web.cs.unibo.it/documents/hasClarityScore> ;
             rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_1_9_406_ver1.html#k825j2078-0-10> ;
             <http://www.w3.org/2000/01/rdf-schema#label>
-                    "ClarityScore"
+                    "good"
           ] ;
   <http://www.w3.org/ns/oa#hasTarget>
           [ a       <http://www.w3.org/ns/oa#SpecificResource> ;
