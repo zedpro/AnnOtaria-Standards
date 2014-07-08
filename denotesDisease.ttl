@@ -1,0 +1,63 @@
+@prefix aop:   <http://annotaria.web.cs.unibo.it/documents/person/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix frbr:  <http://purl.org/vocab/frbr/core#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix au:    <http://description.org/schema/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix ao:    <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+
+
+
+
+
+[ a               oa:Annotation ;
+  rdfs:label      "Malattia" ;
+  ao:type         "denotesDisease" ;
+  oa:annotatedAt  "2014-07-07T17:07" ;
+  oa:annotatedBy  aop:jacopo-carletti ;
+  oa:hasBody      [ a              rdf:Statement ;
+                    rdf:object     <http://www.icd10data.com/ICD10CM/Codes/A00-B99/A90-A99/A98-/A98.4> ;
+                    rdf:predicate  sem:denotes ;
+                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2003_Feb_6_3_2_ver1.html#d418a080a8fbe34-12-45> ;
+                    rdfs:label     "ebola"
+                  ] ;
+  oa:hasTarget    [ a               oa:SpecificResource ;
+                    oa:hasSelector  [ a          oa:FragmentSelector ;
+                                      rdf:value  "d418a080a8fbe34" ;
+                                      oa:end     "45"^^xsd:nonNegativeInteger ;
+                                      oa:start   "12"^^xsd:nonNegativeIntegeroa
+                                    ] ;
+                    oa:hasSource    ao:BMC_Cardiovasc_Disord_2003_Feb_6_3_2_ver1.html
+                  ]
+] .
+
+
+
+<http://www.icd10data.com/ICD10CM/Codes/A00-B99/A90-A99/A98-/A98.4>
+        a           <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:label  "ebola" .
+
+
+
+http://www.icd10data.com/ è il sito di riferimento per le malattie ICD10
+Ogni malattia DEVE essere associata ad una risorsa che ha questo prefisso
+Può essere effettuata una ricerca sparql, simile a quella di dbpedia.
+
+
+Perche questo vincolo?
+1) ci viene imposto da specifiche
+2) è un modo pulito e veloce per distinguere le malattie dagli argomenti ( hanno la medesima struttura sparql)
+3) le altre idee che ho avuto erano troppo folli da standardizzare.
+
+Posso non usare questo prefisso?
+-libero di farlo, cazzi tuoi se al momento della discussione riuscirai a leggere soltanto le tue malattie personalizzate.
+
+La soluzione mi fa cagare, cosa posso fare?
+-proponi una soluzione migliore, verra messà online appena il popolo informatico accetterà la tua proposta... ovviamente prima della scadenza (vedi ReadMe)
