@@ -2,7 +2,7 @@ AnnOtaria-Standards
 ===================
 
 
-NON CI SONO TUTTE LE TIPOLOGIE: ne stiamo discutendo, a breve cercheremo di ultimarle.
+
 
 I prefix non sono presenti in tutti i file. non volevo fare copia incolla.
 
@@ -11,7 +11,7 @@ Linea generale per le annotazioni:
 1. sono di tipo "Annotation": [] a oa:Annotation
 2. hanno l'attributo type: [] rdf:type "denotesPerson"
 3. hanno una label esterna sarà la traduzione italiana del tipo, nel modo piu semplice possibile: "Persona"
-4. parametro annotatedAT : "2014-07-07T13:07"
+4. parametro annotatedAt : "2014-07-15T23:53:51+02:00" <<-- news (added timezone, ma se lasciate come negli esempi .ttl non    ci sono problemi di compatibilità)
 5. ha un body di tipo rdf:Statement
    1. ha un subject relativo all'url del documento: + "#" +"id_container" +"start"+"end"
    2. ha un predicate relativo al tipo di annotazione sopra citato
