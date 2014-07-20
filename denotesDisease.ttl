@@ -25,7 +25,7 @@
   oa:hasBody      [ a              rdf:Statement ;
                     rdf:object     <http://www.icd10data.com/ICD10CM/Codes/ebola> ;
                     rdf:predicate  sem:denotes ;
-                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2003_Feb_6_3_2_ver1.html#d418a080a8fbe34-12-45> ;
+                    rdf:subject    ao:BMC_Cardiovasc_Disord_2003_Feb_6_3_2_ver1#d418a080a8fbe34-12-45 ;
                     rdfs:label     "ebola"
                   ] ;
   oa:hasTarget    [ a               oa:SpecificResource ;
