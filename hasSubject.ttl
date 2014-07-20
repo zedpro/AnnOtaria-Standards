@@ -1,4 +1,4 @@
-@prefix aop:   <http://annotaria.web.cs.unibo.it/documents/person/> .
+@prefix aop:   <http://vitali.web.cs.unibo.it/AnnOtaria/person/>
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix frbr:  <http://purl.org/vocab/frbr/core#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +8,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oa:    <http://www.w3.org/ns/oa#> .
-@prefix ao:    <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix ao:    <http://vitali.web.cs.unibo.it/AnnOtaria/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
@@ -21,9 +21,9 @@
   oa:annotatedAt  "2014-07-08T18:07" ;
   oa:annotatedBy  aop:leonardo-montecchiari ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     <http://thes.bncf.firenze.sbn.it/termine.php?id=3189&menuR=1&menuS=2> ;
+                    rdf:object     <http://thes.bncf.firenze.sbn.it/Sicurezza> ;
                     rdf:predicate  fabio:hasSubjectTerm ;
-                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html#i215y3994-0-8> ;
+                    rdf:subject    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1#i215y3994-0-8 ;
                     rdfs:label     "Sicurezza"
                   ] ;
   oa:hasTarget    [ a               oa:SpecificResource ;
@@ -38,27 +38,12 @@
 
 
 
-<http://thes.bncf.firenze.sbn.it/termine.php?id=3189&menuR=1&menuS=2>
+<http://thes.bncf.firenze.sbn.it/Sicurezza>
         a           <http://www.w3.org/2004/02/skos/core#Concept> ;
         rdfs:label  "Sicurezza" .
 
 
-
-
-
-
-http://thes.bncf.firenze.sbn.it/ è il sito di riferimento per il NuovoSoggettario dellaBiblioteca Nazionale di Firenze
-Ogni argomento DEVE essere associato ad una risorsa che ha questo prefisso
-Può essere effettuata una ricerca sparql, simile a quella di dbpedia.
-
-
-Perche questo vincolo?
-1) ci viene imposto da specifiche
-2) è un modo pulito e veloce per distinguere gli argomenti dalle malattie ( hanno la medesima struttura sparql)
-3) le altre idee che ho avuto erano troppo folli da standardizzare.
-
-Posso non usare questo prefisso?
--libero di farlo, cazzi tuoi se al momento della discussione riuscirai a leggere soltanto i tuoi argomenti personalizzati.
-
-La soluzione mi fa cagare, cosa posso fare?
--proponi una soluzione migliore, verra messà online appena il popolo informatico accetterà la tua proposta... ovviamente prima della scadenza (vedi ReadMe)
+Le specifiche suggeriscono di prendere LA LISTA degli ARGOMENTI  dal sito della biblioteca di firenze ma non i prefissi, in linea generale: un argomento è uno skos concept;
+Nell'instance widget bisogna leggere i propri argomenti. In fase di lettura annotazione, dobbiamo riuscire 
+a visualizzare gli argomenti dell'annotazione x. Un altro gruppo ha messo delle annotazioni di argomenti, ma nn ha specificato lo skos concept
+Liberi di fare come volete, poi non ci lamentiamo se abbiamo problemi di compatibilità.
