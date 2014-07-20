@@ -35,7 +35,7 @@
 ] .
 
 
-<http://esempio.es/london> a skos:Concept ;
+<http://esempio.es/london> a dbpedia:Place ;
                 rdfs:label "London" .
 
 In object, dovrebbe esser rappresentato un place con uno skos concept (da specifiche).
