@@ -1,4 +1,4 @@
-@prefix aop:   <http://annotaria.web.cs.unibo.it/documents/person> .
+@prefix aop:   <http://vitali.web.cs.unibo.it/AnnOtaria/person/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix frbr:  <http://purl.org/vocab/frbr/core#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +8,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oa:    <http://www.w3.org/ns/oa#> .
-@prefix ao:    <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix ao:    <http://vitali.web.cs.unibo.it/AnnOtaria/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
@@ -17,11 +17,11 @@
   rdfs:label      "Persona" ;
   ao:type         "denotesPerson" ;
   oa:annotatedAt  "2014-07-05T11:07" ;
-  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/jacopo-carletti> ;
+  oa:annotatedBy  aop:jacopo-carletti ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     <http://www.jacopo.it> ;
+                    rdf:object     aop:jacopo-carletti ;
                     rdf:predicate  sem:denotes ;
-                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2005_Aug_19_5_24_ver1.html#d1e169-6-181> ;
+                    rdf:subject    ao:BMC_Cardiovasc_Disord_2005_Aug_19_5_24_ver1#d1e169-6-181 ;
                     rdfs:label     "Jacopo Carletti"
                   ] ;
   oa:hasTarget    [ a               oa:SpecificResource ;
@@ -34,65 +34,3 @@
                   ]
 ] .
 
-[ a               oa:Annotation ;
-  rdfs:label      "Persona" ;
-  ao:type         "denotesPerson" ;
-  oa:annotatedAt  "2014-07-05T11:07" ;
-  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
-  oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     <http://patonz.it> ;
-                    rdf:predicate  sem:denotes ;
-                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html#r197o9182-8-19> ;
-                    rdfs:label     "Leonardo Montecchiari"
-                  ] ;
-  oa:hasTarget    [ a               oa:SpecificResource ;
-                    oa:hasSelector  [ a          oa:FragmentSelector ;
-                                      rdf:value  "r197o9182" ;
-                                      oa:end     "19"^^xsd:nonNegativeInteger ;
-                                      oa:start   "8"^^xsd:nonNegativeIntegeroa
-                                    ] ;
-                    oa:hasSource    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html
-                  ]
-] .
-
-[ a               oa:Annotation ;
-  rdfs:label      "Persona" ;
-  ao:type         "denotesPerson" ;
-  oa:annotatedAt  "2014-07-05T11:07" ;
-  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
-  oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     <http://patonz.it> ;
-                    rdf:predicate  sem:denotes ;
-                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html#a667u1145-7-10> ;
-                    rdfs:label     "Leonardo Montecchiari"
-                  ] ;
-  oa:hasTarget    [ a               oa:SpecificResource ;
-                    oa:hasSelector  [ a          oa:FragmentSelector ;
-                                      rdf:value  "a667u1145" ;
-                                      oa:end     "10"^^xsd:nonNegativeInteger ;
-                                      oa:start   "7"^^xsd:nonNegativeIntegeroa
-                                    ] ;
-                    oa:hasSource    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html
-                  ]
-] .
-
-[ a               oa:Annotation ;
-  rdfs:label      "Persona" ;
-  ao:type         "denotesPerson" ;
-  oa:annotatedAt  "2014-07-05T11:07" ;
-  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/jacopo-carletti> ;
-  oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     <http://patonz.it> ;
-                    rdf:predicate  sem:denotes ;
-                    rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2002_Mar_27_2_7_ver1.html#f279ea992a2bfe7-60-106> ;
-                    rdfs:label     "Leonardo Montecchiari"
-                  ] ;
-  oa:hasTarget    [ a               oa:SpecificResource ;
-                    oa:hasSelector  [ a          oa:FragmentSelector ;
-                                      rdf:value  "f279ea992a2bfe7" ;
-                                      oa:end     "106"^^xsd:nonNegativeInteger ;
-                                      oa:start   "60"^^xsd:nonNegativeIntegeroa
-                                    ] ;
-                    oa:hasSource    ao:BMC_Cardiovasc_Disord_2002_Mar_27_2_7_ver1.html
-                  ]
-] .
