@@ -26,16 +26,21 @@ Linea generale per le annotazioni:
 3. hanno una label esterna sarà la traduzione italiana del tipo, nel modo piu semplice possibile: "Persona"
 4. parametro annotatedAt : "2014-07-15T23:53:51+02:00" <<-- news (added timezone, ma se lasciate come negli esempi .ttl non    ci sono problemi di compatibilità)
 5. ha un body di tipo rdf:Statement
-   1. ha un subject ao:NOMDE-DOCUMENTO_ver1 : + "#" +"id_container" +"start"+"end"
+   1. ha un subject ao:NOME-DOCUMENTO_ver1 : + "#" +"id_container" +"start"+"end"
    2. ha un predicate relativo al tipo di annotazione sopra citato
    3. ha un object : stringa o istanza(Persone, Luoghi, Malattie etc)
    4. ha una label: valore dell'input (nome della persona, nome del luogo etc..)
 6. ha un target che puo essere una risorsa specifica (frammento) oppure un documento 
 
 
+La struttura è stata ripresa dagli esempi delle specifiche del prof. Nella tabella in cui vengono spiegati i tipi di annotazione, sono presenti le ontologie da utilizzare.... Notare come nel campo OBJECT tranne in alcuni casi, è sempre presente un concetto. LUOGHI MALATTIE SCORES ARGOMENTI PERSONE.... solo per i commenti / titoli ...(stringhe),
+data( date).
 
+L'unico documento sempre valido rimangono le specifiche del prof. Viene lasciata la libertà di AGGIUNGERE statement.. nel nostro caso ao:type.
 
-tutti gli esempi relativi ad ogni tipo di annotazione, vengono continuamente aggiornati. 
+Creare nuovi prefissi, rimane uno degli scopi dell'esame (non necessario per superare il progetto).
+
+I FILE NON VENGONO AGGIORNATI SPESSO, vi consiglio SEMPRE di leggere questo documento e di controllare le annotazioni presenti nel fuseki condiviso create da uno dei componenti modal-nodes: Leonardo Montecchiari, Lorenzo Gigli, Jacopo Carletti, Markus Aurich.
 
 Vi prego di seguire questi standards: non è una competizione, dobbiamo solo fare bene e rimanere in linea tra di noi
 
