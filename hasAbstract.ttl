@@ -2,11 +2,11 @@
   rdfs:label      "Riassunto" ;
   ao:type         "hasAbstract" ;
   oa:annotatedAt  "2014-07-05T12:07" ;
-  oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
+  oa:annotatedBy  aop:leonardo-montecchiari ;
   oa:hasBody      [ a              rdf:Statement ;
                     rdf:object     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lacinia in quam a vestibulum. Aenean nec odio vitae lectus eleifend ultrices id sit amet eros. Nam lacinia consectetur imperdiet. Integer aliquam rutrum odio, eget fermentum orci lobortis in. In sollicitudin commodo quam in ultricies. Suspendisse a cursus nulla. Fusce et sem turpis. Nam in eros ut magna pretium consectetur. Ut at mauris vitae quam facilisis blandit quis vulputate risus. Sed nec elit id neque dapibus feugiat. Nulla sit amet orci ullamcorper lectus iaculis dictum viverra quis urna. Aenean pharetra justo ac libero porttitor, id pulvinar magna interdum."^^xsd:string ;
                     rdf:predicate  dcterms:abstract ;
-                    rdf:subject    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html ;
+                    rdf:subject    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1 ;
                     rdfs:label     "Lorem ipsu..."
                   ] ;
   oa:hasTarget    ao:BMC_Bioinformatics_2008_Oct_2_9_407_ver1.html
