@@ -1,4 +1,4 @@
-@prefix aop:   <http://annotaria.web.cs.unibo.it/documents/person/> .
+@prefix aop:   <http://vitali.web.cs.unibo.it/AnnOtaria/person/>
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix frbr:  <http://purl.org/vocab/frbr/core#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +8,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oa:    <http://www.w3.org/ns/oa#> .
-@prefix ao:    <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix ao: <http://vitali.web.cs.unibo.it/AnnOtaria/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
@@ -23,7 +23,7 @@
   oa:annotatedAt  "2014-07-07T17:07" ;
   oa:annotatedBy  aop:jacopo-carletti ;
   oa:hasBody      [ a              rdf:Statement ;
-                    rdf:object     <http://www.icd10data.com/ICD10CM/Codes/A00-B99/A90-A99/A98-/A98.4> ;
+                    rdf:object     <http://www.icd10data.com/ICD10CM/Codes/ebola> ;
                     rdf:predicate  sem:denotes ;
                     rdf:subject    <http://annotaria.web.cs.unibo.it/documents/BMC_Cardiovasc_Disord_2003_Feb_6_3_2_ver1.html#d418a080a8fbe34-12-45> ;
                     rdfs:label     "ebola"
@@ -40,24 +40,11 @@
 
 
 
-<http://www.icd10data.com/ICD10CM/Codes/A00-B99/A90-A99/A98-/A98.4>
+<http://www.icd10data.com/ICD10CM/Codes/ebola>
         a           <http://www.w3.org/2004/02/skos/core#Concept> ;
         rdfs:label  "ebola" .
 
-
-
-http://www.icd10data.com/ è il sito di riferimento per le malattie ICD10
-Ogni malattia DEVE essere associata ad una risorsa che ha questo prefisso
-Può essere effettuata una ricerca sparql, simile a quella di dbpedia.
-
-
-Perche questo vincolo?
-1) ci viene imposto da specifiche
-2) è un modo pulito e veloce per distinguere le malattie dagli argomenti ( hanno la medesima struttura sparql)
-3) le altre idee che ho avuto erano troppo folli da standardizzare.
-
-Posso non usare questo prefisso?
--libero di farlo, cazzi tuoi se al momento della discussione riuscirai a leggere soltanto le tue malattie personalizzate.
-
-La soluzione mi fa cagare, cosa posso fare?
--proponi una soluzione migliore, verra messà online appena il popolo informatico accetterà la tua proposta... ovviamente prima della scadenza (vedi ReadMe)
+Le specifiche suggeriscono di prendere LA LISTA DELLE MALATTIE  ICD10 ma non i prefissi, in linea generale: una malattia è uno skos concept;
+Nell'instance widget bisogna leggere le proprie malattie e non le altre. In fase di lettura annotazione, dobbiamo riuscire 
+a visualizzare la malattia dell'annotazione x. Un altro gruppo ha messo delle annotazioni di malattie, ma nn ha specificato lo skos concept
+Liberi di fare come volete, poi non ci lamentiamo se abbiamo problemi di compatibilità.
