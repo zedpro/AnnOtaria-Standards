@@ -1,4 +1,4 @@
-@prefix aop:   <http://annotaria.web.cs.unibo.it/documents/person> .
+@prefix aop:   <http://vitali.web.cs.unibo.it/AnnOtaria/person/>
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix frbr:  <http://purl.org/vocab/frbr/core#> .
 @prefix xml:   <http://www.w3.org/XML/1998/namespace> .
@@ -8,7 +8,7 @@
 @prefix schema: <http://schema.org/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oa:    <http://www.w3.org/ns/oa#> .
-@prefix ao:    <http://annotaria.web.cs.unibo.it/documents/> .
+@prefix ao:    <http://vitali.web.cs.unibo.it/AnnOtaria/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix sem:   <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
