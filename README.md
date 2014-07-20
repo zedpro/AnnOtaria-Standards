@@ -5,7 +5,7 @@ Questi file di esempio, sono stati creati totalmente a nostra discrezione. Quals
 (sfogo personale, sorry).
 
 
-I prefix non sono presenti in tutti i file.
+I prefix non sono presenti in tutti i file oppure sono ERRATI.
 RIPORTO SOLTANTO I 2 PREFIX PIU IMPORTANTI.
 
 @prefix aop:   <http://vitali.web.cs.unibo.it/AnnOtaria/person/> . prefisso per le persone di annotaria.
