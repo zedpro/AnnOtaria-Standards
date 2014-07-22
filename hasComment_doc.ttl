@@ -1,6 +1,6 @@
 [ a               oa:Annotation ;
   rdfs:label      "Commento personale" ;
-  ao:type         "hasComment" ;
+  ao:type         "hasCommentDoc" ;
   oa:annotatedAt  "2014-07-05T12:07" ;
   oa:annotatedBy  <http://annotaria.web.cs.unibo.it/documents/person/leonardo-montecchiari> ;
   oa:hasBody      [ a              rdf:Statement ;
