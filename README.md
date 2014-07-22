@@ -1,8 +1,7 @@
 AnnOtaria-Standards
 ===================
 
-Questi file di esempio, sono stati creati totalmente a nostra discrezione. Qualsiasi richiesta di aggiornamento e/o chiarimento è ben voluta. Gia abbiamo notato che ci sono gruppi che leggono i nostri standard proposti ma poi non li seguono. Complimenti a queste persone che fanno di testa propria, farete molta strada. Ricordo che il fuseki è in comune.
-(sfogo personale, sorry).
+Questi file di esempio, sono stati creati totalmente a nostra discrezione. Qualsiasi richiesta di aggiornamento e/o chiarimento è ben voluta.
 
 
 I prefix non sono presenti in tutti i file oppure sono ERRATI.
